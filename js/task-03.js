@@ -15,4 +15,4 @@ const images = [
 
 
 
-const
+const el
