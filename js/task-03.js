@@ -13,6 +13,9 @@ const images = [
   },
 ];
 
+for (let el of images)
+  document.querySelector(".gallery").insertAdjacentHTML( "beforeEnd",
+      `<li class"picture " ><img  src="${el.url}" alt="${el.alt}" width="370" height="360"></li>`
+    );
 
 
-const el
