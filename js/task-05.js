@@ -4,7 +4,7 @@
 
     input.addEventListener('input', onInputChange);
 
-
+    
     function onInputChange(a){
     span.textContent = a.currentTarget.value;
 
@@ -14,3 +14,4 @@
   
   }
 
+console.log(input.value)

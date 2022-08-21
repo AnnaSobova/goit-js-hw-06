@@ -6,32 +6,17 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+const navEl = document.querySelector("#ingredients");
+const IngredientsEl = ingredients.map(ingredient =>{
+  const element = document.createElement('li');
+  element.classList.add('item');
+  element.textContent= ingredient;
+  return element; 
+})
 
-const navLinkFirstEl= document.createElement('li')
-navLinkFirstEl.classList.add('item');
-navLinkFirstEl.textContent= 'Potatoes';
+console.log(navEl);
+console.log(IngredientsEl);
 
-const navLinkSecondEl= document.createElement('li')
-navLinkSecondEl.classList.add('item');
-navLinkSecondEl.textContent= 'Mushrooms';
+navEl.append(...IngredientsEl);
 
-const navLinkThirdEl= document.createElement('li')
-navLinkThirdEl.classList.add('item');
-navLinkThirdEl.textContent= 'Garlic';
 
-const navLinkFourthEl= document.createElement('li')
-navLinkFourthEl.classList.add('item');
-navLinkFourthEl.textContent= 'Tomatos';
-
-const navLinkFifthEl= document.createElement('li')
-navLinkFifthEl.classList.add('item');
-navLinkFifthEl.textContent= 'Herbs';
-
-const navLinkSixthEl= document.createElement('li')
-navLinkSixthEl.classList.add('item');
-navLinkSixthEl.textContent= 'Condiments';
-
-const navEl = document.querySelector ("#ingredients");
-navEl.append(navLinkFirstEl,navLinkSecondEl,navLinkThirdEl,navLinkFourthEl,navLinkFifthEl,navLinkSixthEl);
-
-console.log(navEl)
